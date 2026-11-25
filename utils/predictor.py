@@ -1,9 +1,15 @@
 import streamlit as st
 import numpy as np
 import joblib
+import os
 
 
-model = joblib.load("crop_model.pkl")
+MODEL_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(__file__)),
+    "crop_model.pkl"
+)
+
+model = joblib.load(MODEL_PATH)
 
 def prediction_form():
 
@@ -63,4 +69,4 @@ Prediction Generated Successfully
 
 """,unsafe_allow_html=True)
 
-  
+
