@@ -6,6 +6,7 @@ from utils.ui import (
     show_header,
     show_dashboard_cards,
     show_footer
+
 )
 
 from utils.predictor import prediction_form
