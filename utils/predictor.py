@@ -5,7 +5,6 @@ import joblib
 
 model = joblib.load("crop_model.pkl")
 
-
 def prediction_form():
 
     left,right=st.columns(2)
